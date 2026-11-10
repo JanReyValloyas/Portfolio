@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Developer & Cybersecurity Portfolio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --dark-bg: #0f172a;
+      --card-bg: #1e293b;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, var(--dark-bg) 0%, #1e1b4b 100%);
+      color: #fff;
+      padding: 100px 0 80px;
+    }
+    .bg-dark-custom {
+      background-color: var(--dark-bg);
+    }
+    .card-custom {
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+    .badge-tech {
+      background-color: #e2e8f0;
+      color: #1e293b;
+      font-weight: 500;
+    }
+    .timeline-item {
+      border-left: 3px solid var(--primary-color);
+      padding-left: 20px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 0;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-link navbar-brand fw-bold text-primary" href="#home">
+        <i class="bi bi-terminal-fill me-2"></i>DevPortfolio
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#academics">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#objectives">Career Goals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Header Section -->
+  <header id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">BS Information Technology Student</span>
+          <h1 class="display-4 fw-bold mb-3">Building Scalable Systems & Securing Digital Assets</h1>
+          <p class="lead text-light opacity-75 mb-4">
+            Passionate about backend architectures, database design, modern web platforms, and cybersecurity analysis. Focused on writing efficient code and understanding system security.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#academics" class="btn btn-primary btn-lg">Explore Portfolio</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-bold mb-3">About Me</h2>
+          <p class="text-secondary">
+            I am an Information Technology student specializing in system design, application backend logic, and quantitative security risk evaluation. 
+          </p>
+          <p class="text-secondary">
+            Whether building full-stack web applications backed by serverless cloud databases or practicing scripting tools locally, I focus on practical problem-solving, structured workflows, and high-performance execution.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-custom shadow-sm p-4 bg-white">
+            <h5 class="fw-bold mb-3"><i class="bi bi-shield-check text-primary me-2"></i>Core Specializations</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Backend Software & Scripting</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Database Modeling & Data Warehousing</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Systems Analysis & Architecture</li>
+              <li class="mb-0"><i class="bi bi-check2-circle text-primary me-2"></i>Cybersecurity & System Risk Assessment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics & Mastered Subjects -->
+  <section id="academics" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Academic Focus</h2>
+        <p class="text-secondary">Core IT coursework and areas of technical mastery</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-custom shadow-sm h-100 p-3">
+            <div class="card-body">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-database"></i></div>
+              <h5 class="card-title fw-bold">Database & Warehousing</h5>
+              <p class="card-text text-secondary">
+                Mastery in SQL, relational schema optimization, public table administrative permissions, and enterprise data warehouse architecture models (Lucidchart/ERD).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom shadow-sm h-100 p-3">
+            <div class="card-body">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-code-square"></i></div>
+              <h5 class="card-title fw-bold">Object-Oriented & Scripting</h5>
+              <p class="card-text text-secondary">
+                Proficient in Java OOP encapsulation, beverage/retail transaction system modeling, Python CLI tools paired with SQLite3 backends, and local XAMPP/PHP web setups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom shadow-sm h-100 p-3">
+            <div class="card-body">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-diagram-3"></i></div>
+              <h5 class="card-title fw-bold">Systems Analysis & Agile</h5>
+              <p class="card-text text-secondary">
+                Analyzing workflows, comparing linear Waterfall models against iterative Agile sprint cycles, and managing system risk assessments for institutional tracking models.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Technical Skills</h2>
+        <p class="text-secondary">Tools, languages, and environments in my workflow</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Programming & Databases -->
+        <div class="col-md-6">
+          <div class="card card-custom shadow-sm p-4">
+            <h5 class="fw-bold mb-3"><i class="bi bi-code-slash text-primary me-2"></i>Languages & Data Storage</h5>
+            
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">Java & Python</span>
+                <span>85%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">SQL (SQLite, PostgreSQL, Supabase)</span>
+                <span>90%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="mb-0">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-semibold">HTML5, CSS, React Native (Expo)</span>
+                <span>80%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developer Tools & Environment -->
+        <div class="col-md-6">
+          <div class="card card-custom shadow-sm p-4">
+            <h5 class="fw-bold mb-3"><i class="bi bi-tools text-primary me-2"></i>Tools & Deployment</h5>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge badge-tech p-2"><i class="bi bi-git me-1"></i> Git & Git Bash</span>
+              <span class="badge badge-tech p-2"><i class="bi bi-github me-1"></i> GitHub Actions</span>
+              <span class="badge badge-tech p-2"><i class="bi bi-triangle-fill me-1"></i> Vercel Hosting</span>
+              <span class="badge badge-tech p-2"><i class="bi bi-cpu me-1"></i> PyCharm Community</span>
+              <span class="badge badge-tech p-2"><i class="bi bi-filetype-php me-1"></i> XAMPP / Apache</span>
+              <span class="badge badge-tech p-2"><i class="bi bi-cloud-check me-1"></i> Neon Serverless DB</span>
+              <span class="badge badge-tech p-2"><i class="bi bi-diagram-2 me-1"></i> Lucidchart Schema</span>
+            </div>
+            <p class="text-secondary small mb-0">
+              Experienced in configuring environment parameters, managing feature branches, setting cloud row-level policies, and deploying live production applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Certifications -->
+  <section id="achievements" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Achievements & Milestones</h2>
+        <p class="text-secondary">Projects built, certifications earned, and academic highlights</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="timeline-item">
+            <h5 class="fw-bold mb-1">Full-Stack Cloud Visitor Log System</h5>
+            <span class="badge bg-secondary mb-2">Deployed Project</span>
+            <p class="text-secondary">
+              Designed and deployed a serverless library visitor registration web application utilizing Next.js file-based routing, hosted on Vercel with a Neon PostgreSQL cloud database backend.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h5 class="fw-bold mb-1">Enterprise Inventory Data Warehouse Architecture</h5>
+            <span class="badge bg-secondary mb-2">Systems & Data Design</span>
+            <p class="text-secondary">
+              Architected a multi-table enterprise data warehouse schema for inventory tracking using Lucidchart, incorporating strict cardinalities and relational constraints.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h5 class="fw-bold mb-1">Certification: Systems Analysis & Risk Management</h5>
+            <span class="badge bg-primary mb-2">Academic Certification</span>
+            <p class="text-secondary">
+              Completed foundational training in system risk assessments, quantitative evaluation metrics, and network architecture defense principles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Objectives -->
+  <section id="objectives" class="py-5">
+    <div class="container">
+      <div class="card card-custom bg-dark-custom text-white p-4 p-md-5">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3 class="fw-bold mb-3"><i class="bi bi-compass text-primary me-2"></i>Career Objectives</h3>
+            <p class="lead opacity-75">
+              To leverage a strong foundation in BS Information Technology to secure a role as a <strong>Cybersecurity Analyst</strong> or <strong>Backend Systems Engineer</strong>.
+            </p>
+            <p class="opacity-75 mb-0">
+              My goal is to protect enterprise digital assets through quantitative security evaluations, build fault-tolerant cloud services, and continually develop specialized capabilities in network security, threat analysis, and automated database management.
+            </p>
+          </div>
+          <div class="col-md-4 text-center mt-4 mt-md-0">
+            <i class="bi bi-shield-lock display-1 text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Contact Me</h2>
+        <p class="text-secondary">Feel free to reach out for project collaborations or inquiries</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="card card-custom p-4 shadow-sm">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-semibold">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Academic / Project Inquiry">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 fw-semibold">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark-custom text-center text-white opacity-75 border-top border-secondary">
+    <div class="container">
+      <small>&copy; 2026 Student IT & Cybersecurity Portfolio | Built with Bootstrap 5</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
